@@ -19,7 +19,7 @@ MY_AWESOME_PROMPT = textwrap.dedent("""
 @mcp.tool()
 async def code_review(ctx: Context) -> str:
     """
-    今日の定型プロンプトを取得します。
+    ソースコードをレビューするための定型プロンプトを取得します。
     プロンプトエンジニアリングに使えます。
     """
     await ctx.info("Code review requested for")
