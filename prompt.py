@@ -17,12 +17,12 @@ MY_AWESOME_PROMPT = textwrap.dedent("""
 """)
 
 @mcp.tool()
-async def code_review(code: str, ctx: Context) -> str:
+async def code_review(ctx: Context) -> str:
     """
     今日の定型プロンプトを取得します。
     プロンプトエンジニアリングに使えます。
     """
-    await ctx.info(f"Code review requested for: {code}")
+    await ctx.info("Code review requested for")
     return MY_AWESOME_PROMPT
 
 if __name__ == "__main__":
